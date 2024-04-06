@@ -45,9 +45,11 @@ def sacar(valor):
 
 def mostrar_extrato():
     extrato = "Depósitos: \n" + "\n".join([f"R$ {dep:.2f}" for dep in depositos])
-    extrato += "\nSaques: \n" + "\n".join([f"R$ {saq:.2f}" for saq in saques])
-    extrato += f"\nSaldo: R$ {saldo:.2f}"
+    extrato += "\n\nSaques: \n" + "\n".join([f"R$ {saq:.2f}" for saq in saques])
+    extrato += f"\n\nSaldo: R$ {saldo:.2f}\n"
+    print("\n================= Extrato =================\n")
     print(extrato)
+    print("==========================================")
 
 
 while True:
